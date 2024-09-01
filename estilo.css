@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    background-color: rgba(132, 0, 255, 0.041);
+}
+
+/* Classes globais */
+.titulo{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 10px;
+    border: solid 1px black; 
+    border-radius: 20px;
+    background-color: blueviolet;
+    color: white;
+}
+
+.paragrafo{
+    text-align: center;
+    padding: 40px 4%;
+    font-size: 22px;
+}
+
+.tamanho-sessao{
+    padding: 10px 4%;
+    margin-bottom: 0%;
+}
+/* Fim das classes globais */
+
+body{
+    margin: 0;
+}
+
+.container{
+    display: grid;
+}
+
+header{
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color: blueviolet;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.menu {
+    grid-column-start: 6;
+    grid-column-end: 12;
+    justify-content: center;
+    gap: 20px;
+    font-size: 25px;
+    
+}
+
+.menu ul{
+    list-style-type: none;
+    
+    
+}
+.menu li{
+    float: left;
+    padding: 8px 16px;
+    
+}
+
+.menu a{
+    text-decoration: none;
+    padding: 10px;
+}
+.menu a:hover{
+    background-color: blueviolet;
+    border-radius: 20px;
+    box-shadow: 0 0 20px black;
+    color: white;
+}
+   
+.sessao1{
+    padding: 40px 4%;
+    border-radius: 20px;
+}
+
+
+/* Sessão contato */
+.contato-form input, .contato-form textarea {
+    
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+}
+.contato-form button {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    
+}
+.contato-form button:hover {
+    background-color: blueviolet;
+    box-shadow: 0 0 20px black;
+}
+
+/* Rodapé */
+
+footer{
+    background-color: blueviolet;
+    height: 200px;
+    padding: 80px 4%;
+}
+footer .linha1{
+    text-align: center;
+    font-weight: 500;
+    color: white;
+    font-size: 25px;
+}
+
+.linha1 span{
+    display: block;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1046px){
+    .paragrafo .img{
+        width: 360px;
+        gap: 20px;
+
+    }
+        
+    }   
